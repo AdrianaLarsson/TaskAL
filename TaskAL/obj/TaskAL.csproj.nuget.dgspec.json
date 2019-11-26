@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/adrianalarsson/Projects/TaskAL/TaskAL/TaskAL.csproj": {}
+  },
+  "projects": {
+    "/Users/adrianalarsson/Projects/TaskAL/TaskAL/TaskAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/adrianalarsson/Projects/TaskAL/TaskAL/TaskAL.csproj",
+        "projectName": "TaskAL",
+        "projectPath": "/Users/adrianalarsson/Projects/TaskAL/TaskAL/TaskAL.csproj",
+        "packagesPath": "/Users/adrianalarsson/.nuget/packages/",
+        "outputPath": "/Users/adrianalarsson/Projects/TaskAL/TaskAL/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/adrianalarsson/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.991211, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.6.292, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

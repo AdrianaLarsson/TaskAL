@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{F81869CB-A84C-44F1-8E04-50C8634BBFFF}|Default">
+  <MonoDevelop.Ide.ItemProperties.TaskAL PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ECC5042F-F1C3-4FC4-BD9E-51C02179C0D2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TaskAL/EmptyClass.cs">
+    <Files>
+      <File FileName="TaskAL/Main.storyboard" />
+      <File FileName="TaskAL/ViewController.cs" Line="43" Column="13" />
+      <File FileName="TaskAL/PersonsViewCandTVC.cs" Line="29" Column="1" />
+      <File FileName="TaskAL/TableViewSource.cs" Line="10" Column="9" />
+      <File FileName="TaskAL/EmptyClass.cs" Line="7" Column="40" />
+      <File FileName="TaskAL/DetailPersonVC.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TaskAL" expanded="True">
+            <Node name="TaskAL" expanded="True">
+              <Node name="EmptyClass.cs" selected="True" />
+              <Node name="PersonsViewCandTVC.cs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

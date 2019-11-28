@@ -78,9 +78,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="237" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="178" y="547" width="46" height="30"/>
+                                <rect key="frame" x="63" y="543" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Insert"/>
                                 <connections>
                                     <action selector="SaveBtn_TouchUpInside:" destination="211" id="240" eventType="touchUpInside"/>
                                 </connections>
@@ -92,6 +92,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9860" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="251" y="543" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Databse"/>
+                                <connections>
+                                    <action selector="CreateDatabse_TouchUpInside:" destination="211" id="9862" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9863" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="7">
+                                <rect key="frame" x="32" y="278" width="355" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="10094" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="132" y="617" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="RetriveBtn_TouchUpInside:" destination="211" id="10096" eventType="touchUpInside"/>
+                                </connections>
+                                <state key="normal" title="Hämta data"/>
+                            </button>
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="Lägg till person" id="213"/>
@@ -101,6 +124,9 @@
                         <outlet property="Age" destination="236" id="name-outlet-236"/>
                         <outlet property="Sum" destination="239" id="name-outlet-239"/>
                         <outlet property="SaveBtn" destination="237" id="name-outlet-237"/>
+                        <outlet property="CreateDatabse" destination="9860" id="name-outlet-9860"/>
+                        <outlet property="lblDBName" destination="9863" id="name-outlet-9863"/>
+                        <outlet property="RetriveBtn" destination="10094" id="name-outlet-10094"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="214" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,8 +182,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7734" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="201" y="91" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7734" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="8">
+                                <rect key="frame" x="117" y="91" width="223" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

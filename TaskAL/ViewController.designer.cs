@@ -20,6 +20,10 @@ namespace TaskAL
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton CreateDatabse { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField FirstName { get; set; }
 
         [Outlet]
@@ -28,11 +32,27 @@ namespace TaskAL
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblDBName { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton RetriveBtn { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton SaveBtn { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel Sum { get; set; }
+
+        [Action ("CreateDatabse_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void CreateDatabse_TouchUpInside (UIKit.UIButton sender);
+
+        [Action ("RetriveBtn_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void RetriveBtn_TouchUpInside (UIKit.UIButton sender);
 
         [Action ("SaveBtn_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -45,6 +65,11 @@ namespace TaskAL
                 Age = null;
             }
 
+            if (CreateDatabse != null) {
+                CreateDatabse.Dispose ();
+                CreateDatabse = null;
+            }
+
             if (FirstName != null) {
                 FirstName.Dispose ();
                 FirstName = null;
@@ -53,6 +78,16 @@ namespace TaskAL
             if (LastName != null) {
                 LastName.Dispose ();
                 LastName = null;
+            }
+
+            if (lblDBName != null) {
+                lblDBName.Dispose ();
+                lblDBName = null;
+            }
+
+            if (RetriveBtn != null) {
+                RetriveBtn.Dispose ();
+                RetriveBtn = null;
             }
 
             if (SaveBtn != null) {

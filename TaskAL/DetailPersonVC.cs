@@ -10,7 +10,13 @@ namespace TaskAL
     {
         public ViewController viewController;
 
-        public String data;
+      
+        public string firstNP = ViewController.firstN;
+        public string lastNP = ViewController.lastN;
+        public string ageP = ViewController.age;
+        public string selectedR = TableViewSource.SelectedRow;
+
+
 
         public DetailPersonVC()
         {
@@ -22,9 +28,12 @@ namespace TaskAL
 
         public override void ViewDidLoad()
         {
+           
             base.ViewDidLoad();
-           firstNTitle.Text = ViewController.firstN ;
+            firstNTitle.Text = selectedR + firstNP + " " + " Efternamn: " + lastNP + " Ålder: " + ageP; 
+                //+ "Förnamn: " + firstNP + " Efternamn: " + lastNP + " Ålder: " + ageP;
 
+          
             // Perform any additional setup after loading the view, typically from a nib.
         }
 

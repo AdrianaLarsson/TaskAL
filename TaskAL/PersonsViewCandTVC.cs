@@ -8,7 +8,10 @@ namespace TaskAL
     public partial class PersonsViewCandTVC : UIViewController
     {
 
-        public String data;
+        public String ageP = ViewController.age;
+       
+
+       
         
         public PersonsViewCandTVC (IntPtr handle) : base (handle)
         {
@@ -26,11 +29,14 @@ namespace TaskAL
 
       
             mainListview.Source = new TableViewSource(itemData, this);
+           
+            // mainListview.Source = new TableViewSource(tableItems, this);
+
 
             //mainListview.ReloadData();
 
             //Sum2.Text = ViewController.age;
-        
+
         }
 
 
@@ -52,12 +58,17 @@ namespace TaskAL
     
         public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
         {
+          
+
             base.PrepareForSegue(segue, sender);
             var transferdata = segue.DestinationViewController as DetailPersonVC;
             if (transferdata != null)
             {
-                transferdata.data = this.data;
+                transferdata.ageP = this.ageP;
             }
         }
+
+
+     
     }
 }

@@ -9,12 +9,14 @@ namespace TaskAL
     {
 
         public PersonsViewCandTVC owner;
+        public static string SelectedRow;
 
         List<string> personData;
+
        // UIViewController parentController;
         public TableViewSource(List<string> items, PersonsViewCandTVC owner) //UIViewController viewController//)
         {
-            personData = PersonManager.personData;
+            personData = Person.personData;
             this.owner = owner;
            // parentController = viewController; 
         }
@@ -40,13 +42,8 @@ namespace TaskAL
             return personData.Count;
         }
 
-        private UINavigationController primNav { get; set; }
-       // public DetailPersonVC detailPVC { get; private set; }
 
-        public static string SelectedRow;
-        private List<string> itemData;
-      
-
+     
 
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
@@ -54,7 +51,7 @@ namespace TaskAL
 
 
             SelectedRow = personData[indexPath.Row];
-            Console.WriteLine("did select" + SelectedRow);
+            Console.WriteLine("did select " + SelectedRow);
            // var storyboard = UIStoryboard.FromName("Main", null);
            // var controller = storyboard.InstantiateViewController("DetailPersonVC");
 
@@ -88,8 +85,8 @@ namespace TaskAL
 
     **/
 
-            owner.data = SelectedRow;
-            owner.PerformSegue("showDetail", this);
+            owner.ageP = SelectedRow;
+            owner.PerformSegue("showDetail", indexPath);
 
         }
     }

@@ -1,11 +1,17 @@
 ﻿using Foundation;
+using SQLite;
 using System;
+using System.IO;
 using UIKit;
 
 namespace TaskAL
 {
     public partial class ViewController : UIViewController 
     {
+
+        public static string DbName = "SQLitedb.db3";
+        public static string DbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), DbName);
+
 
         public static string firstN;
         public static string lastN;
@@ -17,6 +23,10 @@ namespace TaskAL
 
 
     }
+
+        public ViewController()
+        {
+        }
 
         public override void ViewDidLoad()
         {
@@ -36,11 +46,74 @@ namespace TaskAL
             firstN = FirstName.Text;
             lastN = LastName.Text;
             age = Age.Text;
-          
 
-            Sum.Text = "Förnamn: " + firstN + " Efternamn: " + lastN + " Ålder: "  + age ;
 
-            PersonManager.personData.Add(Sum.Text);
+            Sum.Text =  "Saved " ;
+                //+ " Efternamn: " + lastN + " Ålder: "  + age ;
+
+
+
+            Person.personData.Add(firstN);
+
+            InsertData();
+
+        }
+
+        partial void CreateDatabse_TouchUpInside(UIButton sender)
+        {
+            CreateDB();
+        }
+
+        public void CreateDB()
+        {
+            try
+            {
+                var db = new SQLiteConnection(DbPath);
+                db.CreateTable<Person>();
+                lblDBName.Text = "DB Path:" + DbPath;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
+
+        public void InsertData()
+        {
+            try
+            {
+                firstN = FirstName.Text;
+                lastN = LastName.Text;
+                age  = LastName.Text;
+
+                var person = new Person
+                {
+                    Firstname = firstN,
+                    Lastname = lastN,
+                    Age = age
+
+                };
+                var db = new SQLiteConnection(DbPath);
+                db.Insert(person);
+                Sum.Text = firstN + ":" + lastN + ":" + age;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
+        partial void RetriveBtn_TouchUpInside(UIButton sender)
+        {
+            DbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "SQLitedb.db3");
+            var db = new SQLiteConnection(DbPath);
+            var dataTables = db.Query<Person>("select * from Person");
+
+
         }
     }
+
+
+
 }

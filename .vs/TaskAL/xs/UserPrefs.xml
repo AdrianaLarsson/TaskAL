@@ -1,21 +1,23 @@
 ﻿<Properties StartupConfiguration="{F81869CB-A84C-44F1-8E04-50C8634BBFFF}|Default">
   <MonoDevelop.Ide.ItemProperties.TaskAL PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ECC5042F-F1C3-4FC4-BD9E-51C02179C0D2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TaskAL/view_.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TaskAL/ViewController.cs">
     <Files>
       <File FileName="TaskAL/Main.storyboard" />
-      <File FileName="TaskAL/ViewController.cs" Line="33" Column="1" />
-      <File FileName="TaskAL/PersonsViewCandTVC.cs" Line="11" Column="6" />
-      <File FileName="TaskAL/TableViewSource.cs" Line="95" Column="6" />
-      <File FileName="TaskAL/DetailPersonVC.cs" Line="39" Column="18" />
-      <File FileName="TaskAL/PersonManager.cs" Line="1" Column="1" />
+      <File FileName="TaskAL/ViewController.cs" Line="56" Column="19" />
+      <File FileName="TaskAL/PersonsViewCandTVC.cs" />
+      <File FileName="TaskAL/TableViewSource.cs" />
+      <File FileName="TaskAL/DetailPersonVC.cs" />
+      <File FileName="TaskAL/PersonManager.cs" />
       <File FileName="TaskAL/SceneDelegate.cs" />
-      <File FileName="TaskAL/PersonsViewCandTVC.designer.cs" Line="1" Column="1" />
+      <File FileName="TaskAL/PersonsViewCandTVC.designer.cs" />
       <File FileName="TaskAL/LaunchScreen.storyboard" />
-      <File FileName="TaskAL/Main.cs" Line="12" Column="1" />
-      <File FileName="TaskAL/Person.cs" Line="8" Column="47" />
-      <File FileName="TaskAL/DetailPersonVC.designer.cs" Line="51" Column="2" />
-      <File FileName="TaskAL/view.cs" Line="1" Column="1" />
-      <File FileName="TaskAL/view_.cs" Line="1" Column="1" />
+      <File FileName="TaskAL/Main.cs" />
+      <File FileName="TaskAL/Person.cs" />
+      <File FileName="TaskAL/DetailPersonVC.designer.cs" />
+      <File FileName="TaskAL/view.cs" />
+      <File FileName="TaskAL/view_.cs" />
+      <File FileName="TaskAL/App.cs" />
+      <File FileName="TaskAL/Database.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,16 +26,14 @@
             <Node name="TaskAL" expanded="True">
               <Node name="DetailPersonVC.cs" expanded="True" />
               <Node name="PersonsViewCandTVC.cs" expanded="True" />
-              <Node name="view_.cs" selected="True" />
+              <Node name="ViewController.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="../../../TaskAL/TableViewSource.cs" line="82" offsetX="-1" offsetY="-1" expression="detailPersonVC" liveUpdate="False" />
-  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

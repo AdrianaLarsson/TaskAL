@@ -148,6 +148,7 @@
         </Compile>
         <Compile Include="TableViewSource.cs" />
         <Compile Include="PersonManager.cs" />
+        <Compile Include="Person.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

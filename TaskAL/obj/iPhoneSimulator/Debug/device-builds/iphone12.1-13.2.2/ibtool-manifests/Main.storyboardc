@@ -8,30 +8,16 @@
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
 	<dict>
-		<key>1282</key>
+		<key>5437</key>
 		<array>
 			<dict>
 				<key>affected-objects</key>
 				<array>
-					<string>1282</string>
+					<string>5435</string>
+					<string>5437</string>
 				</array>
 				<key>message</key>
-				<string>Prototype table cells must have reuse identifiers</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>227</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>227</string>
-				</array>
-				<key>message</key>
-				<string>???Detail PersonVC??? is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
+				<string>Plain Style unsupported in a Navigation Item</string>
 				<key>type</key>
 				<string>IBIssueTypeUnsupportedConfiguration</string>
 				<key>type-value</key>

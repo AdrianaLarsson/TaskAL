@@ -4,7 +4,7 @@ using UIKit;
 
 namespace TaskAL
 {
-    public partial class ViewController : UIViewController
+    public partial class ViewController : UIViewController 
     {
 
         public static string firstN;
@@ -38,7 +38,7 @@ namespace TaskAL
             age = Age.Text;
           
 
-            Sum.Text = "Hej på dig " + firstN + lastN + " du säger att du är år " + age + " gammal";
+            Sum.Text = "Förnamn: " + firstN + " Efternamn: " + lastN + " Ålder: "  + age ;
 
             PersonManager.personData.Add(Sum.Text);
         }
